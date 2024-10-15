@@ -7,8 +7,8 @@ import (
 	"os"
 )
 
-func ConnectToServer(ip string, port string) {
-	conn, err := net.Dial("tcp", ip+":"+port)
+func ConnectToServer(serverConfig ServerConfig) {
+	conn, err := net.Dial("tcp", serverConfig.IP+":"+serverConfig.Port)
 	if err != nil {
 		fmt.Println("Error connecting to server:", err)
 		return
