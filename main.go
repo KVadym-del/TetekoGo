@@ -10,10 +10,10 @@ var (
 	clientMode = flag.Bool("client", false, "run in client mode")
 	serverMode = flag.Bool("server", false, "run in server mode")
 
-	serverPort = flag.String("port", "8080", "port to listen on")
-	serverIP   = flag.String("ip", "localhost", "server ip")
+	//serverPort = flag.String("port", "8080", "port to listen on")
+	//serverIP   = flag.String("ip", "localhost", "server ip")
 
-	ServerConfig = src.ServerConfig{Port: "6969"}
+	//ServerConfig = src.ServerConfig{Port: "6969"}
 )
 
 func main() {
